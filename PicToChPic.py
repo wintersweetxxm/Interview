@@ -10,7 +10,7 @@ def main(filename="test.png",width=40,height=40,outfilename="out_file"):
     for i in range(height):
         for j in range(width):
             text += get_char(*im.getpixel((j,i)))
-    text += "\n"
+        text += "\n"
     print(text)
     with open("outfilename", 'w') as f:
         f.write(text)
